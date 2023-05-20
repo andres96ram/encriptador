@@ -45,3 +45,11 @@ function desencriptar(stringdesencriptado) {
     }
     return stringdesencriptado;
   }
+
+  function btncopiar(){
+    var copyText = document.getElementById("salida"); // se obtiene el texto del campo de salida (text-area)
+    copyText.select(); // selecciona el texto del campo 
+    navigator.clipboard.writeText(copyText.value); // se guarda el texto en el portapapeles
+    alert("Texto copiado :" + copyText.value); // Aviso de que el texto se copio 
+
+ }
